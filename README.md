@@ -29,6 +29,10 @@ This is a complete **Full Stack Booking Doctor Appointment Website** built with 
 ![Login](./img/Client/Login.png)
 *Secure Stripe payment integration*
 
+#### Customer Profile
+![Customer Profile](./img/Client/Info.png)
+*Secure Stripe payment integration*
+
 ### 🔐 Admin Panel
 
 #### Admin Dashboard
