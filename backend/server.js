@@ -25,4 +25,7 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Booking Doctor Appointment API!');
 });
 
-app.listen(port, () => console.log(`Server is running on port http://localhost:${port}`));
+// app.listen(port, () => console.log(`Server is running on port http://localhost:${port}`));
+
+// Export app để Vercel dùng
+export default app;
