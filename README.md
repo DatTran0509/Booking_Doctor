@@ -12,6 +12,9 @@ This is a complete **Full Stack Booking Doctor Appointment Website** built with 
 
 #### Homepage
 ![Homepage](./img/Client/Homepage_1.png)
+![Homepage](./img/Client/Homepage_2.png)
+![Homepage](./img/Client/Homepage_3.png)
+*Browse available doctors and specialties*
 *Browse available doctors and specialties*
 
 #### Doctor List
