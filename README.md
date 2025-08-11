@@ -31,7 +31,7 @@ This is a complete **Full Stack Booking Doctor Appointment Website** built with 
 
 #### Customer Profile
 ![Customer Profile](./img/Client/Info.png)
-*Secure Stripe payment integration*
+*Customer can edit their information*
 
 ### 🔐 Admin Panel
 
