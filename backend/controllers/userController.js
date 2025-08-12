@@ -225,7 +225,7 @@ const makePayment = async (req, res) => {
     try {
         const {appointmentId} = req.body
         const appointmentData = await appointmentModel.findById(appointmentId)
-        console.log('appointmentId: ', appointmentId);
+        // console.log('appointmentId: ', appointmentId);
         const{amount} = appointmentData
         //console.log('amount:', amount);
         const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);

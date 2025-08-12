@@ -9,12 +9,12 @@ const Verify = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const success = searchParams.get('success')
     const appointmentId = searchParams.get('appointmentId')
-    const {backend_Url, token} = useContext(AppContext)
+    const {backendUrl, token} = useContext(AppContext)
     const navigate = useNavigate()
     
     const verifyPayment = async () =>{
         try {
-            const response = await axios.post(`${backend_Url}/api/user/verify`, {
+            const response = await axios.post(backendUrl + `/api/user/verify`, {
                 success, 
                 appointmentId
             }, {
