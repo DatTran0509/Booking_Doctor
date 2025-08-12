@@ -221,6 +221,7 @@ const cancelAppointment = async (req, res) => {
 
 const makePayment = async (req, res) => {
     const {FRONTEND_URL} = process.env;
+    // console.log('FRONTEND_URL: ', FRONTEND_URL);
     try {
         const {appointmentId} = req.body
         const appointmentData = await appointmentModel.findById(appointmentId)
