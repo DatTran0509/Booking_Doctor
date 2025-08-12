@@ -220,7 +220,7 @@ const cancelAppointment = async (req, res) => {
 // API to make payment of appoinment using stripe
 
 const makePayment = async (req, res) => {
-    const {FRONTEND_URL} = process.env;
+    const FRONTEND_URL = process.env.FRONTEND_URL 
     // console.log('FRONTEND_URL: ', FRONTEND_URL);
     try {
         const {appointmentId} = req.body
