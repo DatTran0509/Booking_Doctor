@@ -13,14 +13,26 @@ const Verify = () => {
     const navigate = useNavigate()
     
     const verifyPayment = async () =>{
-        const response = await axios.post("http://localhost:4000/api/user/verify", {success, appointmentId}, {headers: {token: token}});
-        if(response.data.success){
-            navigate("/my-appointments");
-        }
-        else{
+        try {
+            const response = await axios.post(`${backend_Url}/api/user/verify`, {
+                success, 
+                appointmentId
+            }, {
+                headers: {token: token}
+            });
+            
+            if(response.data.success){
+                navigate("/my-appointments");
+            }
+            else{
+                navigate("/")
+            }
+        } catch (error) {
+            console.error("Payment verification error:", error);
             navigate("/")
         }
     }
+    
     useEffect(() => {
         verifyPayment();
     },[])
